@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  /* height: 100vh; */
+  width: 100%;
+  background: #C5E4E7;
+  font-family: "IBM Plex Mono";
+}
+
+.container{
+  /* height: 100vh; */
+}
+
+.title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #00474B;
+  font-family: "IBM Plex Mono";
+  /* font-size: 40px; */
+  font-style: normal;
+  /* font-weight: 600; */
+  /* line-height: 50px;  */
+  /* 125% */
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.people-input{
+  background: url("./images/people.svg") no-repeat;
+  background-size:1rem;
+  background-position: left;
+  background-color: #F3F8FB;
+  background-position-x: 22px;
+}
+
+.bill-input{
+  background: url("./images/dollar.svg") no-repeat;
+  background-size:0.8rem;
+  background-position: left;
+  background-color: #F3F8FB;
+  background-position-x: 22px;
+
+}
+
+.content{
+  width: 65%;
+  width: 100%;
+  max-width: 64.5rem;
+  height: fit-content;
+  max-height: fit-content;
+  border-radius: 15px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box{
+  width: 40%;
+  height: 80%;
+  width: 25rem;
+  height: 26rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.box1{
+  /* background: aqua; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left; */
+  margin-right: 20px;
+}
+label{
+  color: #6B7777;
+  font-weight: bolder;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+input{
+  padding: 10px;
+  background-color: #F3F8FB;
+  border: none;
+  outline: none;
+  text-align: right;
+  color: #00474B;
+  font-size: 22px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.box2{
+  border-radius: 15px;
+  background: #00474B;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tip{
+  display: grid;
+  grid-template-columns: 144px 144px 144px;
+  margin-bottom: 1.8rem;
+  row-gap: 2rem;
+}
+
+
+.tips{
+  background: #00474B;
+  color: white;
+  height: 3rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.active-tip{
+  color: #00474B;
+  background: #C5E4E7;
+  
+}
+
+.people{
+  margin-bottom: 2rem;
+}
+
+.flex{
+  display: flex;
+  
+}
+
+.flex-2{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.totalMain, .tipMain{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.person{
+  font-size: 12px;
+  color: #649BA0;
+  font-weight: 700;
+}
+
+.totalAmount{
+  color: #21C3AC ;
+  font-size: 30px;
+  font-weight:900;
+}
+
+.combine{
+  display: grid;
+  row-gap: 10px;
+}
+
+.reset{
+  font-size: 30px;
+  font-weight: 800;
+  color: #00474B;
+  background: #C5E4E7;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  width: 80%;
+  /* margin: auto; */
+}
+
+.container.typing {
+  border-color: #21C3AC; 
+}
+
+.typing-border {
+  border-color: #21C3AC; 
+}
+
+#tipCustom{
+  height: 1.8rem;
+  width: 6rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  margin-left: -1.8rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .content {
+    width: 50%;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input{
+    margin-left: 15px;
+    width: 90%;
+  }
+  .box1 {
+    align-items: center;
+  }
+  
+  .tip {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  .reset {
+    width: 100%;
+  }
+  .box2{
+    margin-top: 310px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .tip {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
